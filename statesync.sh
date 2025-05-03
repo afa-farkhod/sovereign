@@ -65,7 +65,7 @@ install_dependencies() {
 install_go() {
     echo "> installing go..."
     sudo rm -rf /usr/local/go && sudo rm -rf $HOME/.go
-    wget -q -O - $GOLINK | bash && source $HOME/.bashrc
+    wget -q -O - $GOLINK | bash -s -- --version 1.23.4 && source $HOME/.bashrc
 }
 
     #fetch chain-registry
@@ -133,9 +133,8 @@ fetch_cr() {
         #SEEDLIST=${ALTSEEDS}
     fi
 
-        #fix osmo version
     if [[ "$CHAIN" == "osmosis" ]] ; then
-        VERSION="v6.0.0"
+        VERSION="v29.0.0"
     fi  
 
     echo "home dir: $NODE_HOME_DIR"

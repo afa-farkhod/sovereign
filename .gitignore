@@ -1,0 +1,46 @@
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor and IDE configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore log files
+*.log
+
+# Ignore backup and temporary files
+*~
+*.tmp
+*.bak
+
+# Ignore compiled binaries and executables
+*.exe
+*.out
+*.test
+
+# Ignore dependency directories
+vendor/
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+target/
+
+# Ignore OS-specific files
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Ignore Raspberry Pi specific files (if any)
+*.img
+*.iso
+
+# Ignore sensitive files
+.env
+*.pem
+*.key
+*.crt
